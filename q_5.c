@@ -6,71 +6,13 @@
 #define WON 2
 #define LOST 3
 
-int winQuotes(void);
-int loseQuotes(void);
-
-int winQuotes(void)
-{
-    int rn = rand() % 6;
-    switch(rn)
-    {
-        case 0:
-            printf("Lucky for you!!\n");
-            break;
-        case 1:
-                        printf("Winner!!\n");
-                        break;
-        case 2:
-                        printf("Hey there! You're cleaning me out over here!!\n");
-                        break;
-        case 3:
-                        printf("Big WINNER!\n");
-                        break;
-        case 4:
-                        printf("Ouch!! Looks like I'm going broke!\n");
-                        break;
-        case 5:
-                        printf("You Win! PERFECT!\n");
-                        break;
-    }
-       return 0;
-}
- 
- 
-int loseQuotes(void)
-{
-        int rn = rand() % 6;
-        switch(rn)
-        { 
-                case 0:
-                        printf("Not so lucky, are we?\n");
-                        break;
-                case 1:
-                        printf("YOU LOSE!!\n");
-                        break;
-                case 2:
-                        printf("Hey there! Glad to be cleaning you out over here!!\n");
-                        break;
-                case 3:
-                        printf("LOSER!\n");
-                        break;
-                case 4:
-                        printf("HA!! Looks like you're going broke!\n");
-                        break;
-                case 5:
-                        printf("You lose! NOT PERFECT!\n");
-                        break;
-        }
-return 0;
-}
-
 void main()
 {
 	int myPoint;
 	int gameStatus;
 	int sum, dice1, dice2;
 	int bankBalance = 1000;
-    int betAmount;
+    	int betAmount;
 	    
     	printf("Balance = Rs.%d\n", bankBalance);
     	
